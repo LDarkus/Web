@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0; font-size: 40px;">
+    
+    <header class="header">
+        ШАПКА САЙТА
+    </header>  
+    <nav class="nav">
+        НАВИГАЦИЯ
+    </nav>
+
+    <main class="main">
+        <aside class="aside">
+            Левый сайдбар
+        </aside>
+        <div class="main-content">
+            ОСНОВНАЯ ЧАСТЬ
+        </div>
+    </main>
+    <footer class="footer">
+        ПОДВАЛ
+    </footer>
+
+    <style>
+
+        .header{
+            padding: 25px 0 25px 60px;
+            
+            background-color: rgb(219, 219, 4);
+            
+        }
+        .nav{
+            
+            background-color: turquoise;
+            padding-left: 60px;
+
+        }
+        .main{
+            display: flex;
+            flex-grow: 1;
+            color: white;
+           
+        }
+        .aside{
+            background-color: rgb(199, 47, 199);
+            flex-basis: 200px;
+            padding-top: 2.5em;
+            text-align: center;
+            
+        }
+        .main-content{
+            background-color: blue;
+            flex-grow: 9;
+            padding: 8%;
+        }
+        .footer{
+            padding: 25px 0 25px 60px;
+            background-color: rgb(180, 89, 14);
+            color: white;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    </style>
+
+</body>
+</html>

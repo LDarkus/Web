@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="paragraph1 bordered">
+    <span class="name bordered" style="color: violet; padding: 4px;">Весна</span> - прекрасное время года. Весной разбухают почки, становится теплее после холодных зим, расцветают всеми любимые цветы подснежники. У всех растений начинается жизнь.
+    </div>
+    <div class="paragraph2 bordered">
+    Журчат ручьи, по крышам домов капает капель. <span class="name bordered">Солнце</span> светит всё ярче и ярче. Тает <span class="name bordered" style="font-family: 'Courier New', Courier, monospace;">Снег</span>, <span class="adjective bordered">травка</span> зеленеет, птички прилетают с югов. Весна бывает теплая, бывает холодная. 
+    </div>
+    <div class="paragraph3 bordered">
+    <span class="name bordered" style="font-style: italic;">Я</span> надеюсь, что нынешняя <span class="adjective bordered">весно</span> будет тёплой и селнечной. <span class="name bordered">Природа</span> оживает в это замечательное время года. А после весны настаёт лето
+    </div>
+    
+    <style>
+        .adjective {
+            background: yellow;
+            display: inline-block;
+            box-shadow: 0 0 8px grey;
+            transition: all 0.3s;
+            
+        }
+
+        .adjective:hover{
+            background: skyblue;
+            cursor: wait;
+            border-width: 4px;
+            box-shadow: 0 0 30px white; 
+        }
+        
+        .paragraph1{
+            box-sizing: border-box; 
+            text-align: center;
+            background-color: rgb(44, 204, 105);
+        }
+        .paragraph2:hover .adjective {
+            background: red;
+        }
+        .paragraph2:hover .adjective:hover {
+            background: yellow;
+        }
+        .paragraph1:hover .adjective:hover {
+            background: rgb(30, 150, 90);
+        }
+        .paragraph3:hover .adjective:hover {
+            background: rgb(62, 16, 187);
+        }
+
+
+        .paragraph1:hover .bordered{
+            border: 2px dashed rgb(108, 201, 22);
+            margin: 5px; 
+            padding: 0 4px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px red;
+            
+        }
+        .paragraph1:hover .name{
+            background: darkviolet;;
+        }
+        .paragraph1:hover .adjective{
+            background: darkviolet;;
+        }
+        .paragraph2:hover .name{
+            background: rgb(33, 145, 117);;
+        }
+        .paragraph2:hover .adjective{
+            background: rgb(33, 145, 117);;
+        }
+        .paragraph3:hover .name{
+            background: rgb(128, 194, 22);;
+        }
+        .paragraph3:hover .adjective{
+            background: rgb(128, 194, 22);;
+        }
+        .paragraph2:hover .bordered{
+            border: 2px dashed rgb(48, 199, 68);
+            margin: 2px; 
+            padding: 0 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px grey;
+            
+        }
+        .paragraph3:hover .bordered{
+            border: 2px dashed rgb(30, 192, 165);
+            margin: 6px; 
+            padding: 0 4px;
+            border-radius: 2px;
+            box-shadow: 0 0 8px rgb(13, 119, 133);
+
+            
+        }
+        .paragraph2{
+            box-sizing: border-box; 
+            text-align: right;
+            width: 500px;
+            background-color: lightseagreen;
+            display: inline-block; 
+        }
+        .paragraph3{
+            text-align: left;
+            width: 50%;
+            box-sizing: border-box;
+            background: linear-gradient(90deg,#6018e6,#ffa6f3);
+        }
+        .name{
+            background: linear-gradient(80deg, yellow , red);
+            cursor: pointer;
+            display: inline-block; 
+            transition: all 0.3s;
+            
+        }
+        .name:hover{
+            background-color: transparent;
+            box-shadow: 0 0 30px white; 
+            border-width: 4px;
+            padding: 2px;
+            
+        }
+        .bordered {
+            border: 2px dashed black;
+            
+            margin: 2px; 
+            padding: 0 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px grey;
+        }
+
+    </style>
+  
+</body>
+</html>
